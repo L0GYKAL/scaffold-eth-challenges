@@ -73,7 +73,7 @@ describe("🚩 Challenge 3: 🎲 Dice Game", function () {
   });
 
   describe("🔑 Rigged Rolls", function () {
-    it("Should call DiceGame for a roll less than 2", async () => {
+    it("Should call DiceGame for a roll less than or equal to 2", async () => {
       //first change states and create the inputs required to produce a roll <= 2
       let getRollLessThanTwo = true;
       let expectedRoll = await changeStatesToGetRequiredRoll(
